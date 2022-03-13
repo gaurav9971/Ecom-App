@@ -7,6 +7,7 @@ const {
   updateProfile,
   logoutUser,
   logoutAllDevices,
+
   getAllUsers,
   deleteUser,
 } = require('../controllers/user.controller');
@@ -19,6 +20,7 @@ userRouter.get('/me', auth, userProfile);
 userRouter.patch('/:id', auth, updateProfile);
 userRouter.post('/logout', auth, logoutUser);
 userRouter.post('/logoutall', auth, logoutAllDevices);
+
 userRouter.get('/admin/users', auth, admin, getAllUsers);
 userRouter.delete('/admin/delete', auth, admin, deleteUser);
 

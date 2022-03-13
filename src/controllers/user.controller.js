@@ -126,6 +126,7 @@ module.exports = {
   updateProfile,
   logoutUser,
   logoutAllDevices,
+
   getAllUsers,
   deleteUser,
 };
